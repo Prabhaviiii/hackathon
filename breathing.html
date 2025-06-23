@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome</title>
+    <link rel="stylesheet" href="breathe.css">
+    <link rel="stylesheet" href="welcome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo-title">
+            <div class="logo-circle"><div class="heart"></div></div>
+            <div class="title">CareCue</div>
+            </div>
+            <div class="speaker-icon" id="voice-toggle">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        
+ </div>
+
+
+ <div class="navbar">
+    <div class="nav-item" onclick="window.location.href='welcome.html'"><i class="fas fa-home"></i>Home</div>
+    <div class="nav-item" onclick="window.location.href='remainder.html'"><i class="fas fa-bell"></i>Reminder</div>
+    <div class="nav-item" onclick="window.location.href='breathing.html'"><i class="fas fa-heartbeat"></i>Wellness</div>
+    <div class="nav-item" onclick="window.location.href='moodtracker.html'"><i class="fas fa-smile"></i>Mood</div>
+    <div class="nav-item" onclick="triggerEmergency()">
+  <i class="fa-solid fa-phone" style="color: #930760;"></i> Emergency
+</div>
+ </div>
+
+
+
+ <div class="breathing-wrapper">
+    <h1>Breathing Exercise</h1>
+    <div class="circle" id="circle">
+        <i class ="fas fa-wind"></i>
+    </div>
+    <p id="instruction">Ready to relax?</p>
+    <p class="subtext"> Take a moment to center ypurself with a guided breathing exercise.</p>
+    <p id="timer"></p>
+    <button id="startBtn">Start Breathing</button>
+    <button id="stopBtn" style="display:none;"> Stop</button>
+    
+
+ </div>
+ <script src="breathing.js"></script>
+ 
+</body>
+</html>
