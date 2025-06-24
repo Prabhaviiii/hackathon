@@ -1,0 +1,74 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="moodtracker.css">
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+<div class="top-bar">
+  <div class="logo-title">
+    <div class="logo-circle"><div class="heart"></div></div>
+    <div class="title">CareCue</div>
+  </div>
+  <div class="speaker-icon" id="voice-toggle">
+    <i class="fas fa-volume-up"></i>
+  </div>
+</div>
+
+
+  <div class="navbar">
+    <div class="nav-item" onclick="window.location.href='welcome.html'">
+      <i class="fas fa-home"></i> Home
+    </div>
+    <div class="nav-item" onclick="window.location.href='reminder.html'">
+      <i class="fas fa-bell"></i> Reminder
+    </div>
+    <div class="nav-item" onclick="window.location.href='breathing.html'">
+      <i class="fas fa-heartbeat"></i> Wellness
+    </div>
+    <div class="nav-item active" onclick="window.location.href='moodtracker.html'">
+      <i class="fas fa-smile"></i> Mood</div>
+    <div class="nav-item" onclick="triggerEmergency()">
+  <i class="fa-solid fa-phone" style="color: #930760;"></i> Emergency
+</div>
+</div>
+
+
+  <div class="container">
+    <h1>How are you feeling?</h1>
+    <div class="mood-options">
+      <div class="mood-option" data-mood="Happy"><span>😃</span>Happy</div>
+      <div class="mood-option" data-mood="Okay"><span>🙂</span>Okay</div>
+      <div class="mood-option" data-mood="Neutral"><span>😐</span>Neutral</div>
+      <div class="mood-option" data-mood="Sad"><span>😞</span>Sad</div>
+      <div class="mood-option" data-mood="Angry"><span>😠</span>Angry</div>
+    </div>
+    <div>
+      <div class="intensity-label">Mood Intensity: <span id="intensity-value">50%</span></div>
+      <input type="range" id="intensity" min="0" max="100" value="50">
+    </div>
+    <button class="log-button" onclick="logMood()">Log Mood</button>
+  </div>
+
+  <div class="today-box">
+    <h2>Today's Mood</h2>
+    <button class="clear-btn" onclick="clearMoodLogs()">Clear History</button>
+    <div class="today-log" id="moodHistory">No mood logged yet.</div>
+  </div>
+
+  <div id="moodModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="moodTitle"></h2>
+      <p id="moodMessage"></p>
+    </div>
+  </div>
+    <script src="moodtracker.js"></script>
+    <script src="voice.js"></script>
+</body>
+</html>

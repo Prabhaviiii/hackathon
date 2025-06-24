@@ -287,7 +287,7 @@ font-size: 20px;
     transition: color 0.3s ease;
     z-index: 1100;
     margin-right: 0; 
-    margin-left: 1000px;
+    margin-left: 1000;
     
 }
 .languageSwitcher select {
@@ -299,11 +299,4 @@ font-size: 20px;
 }
 .languageSwitcher-label{
     background-color: #5a4fcf ;
-}
-
-.fas_fa-globe{
-    margin-left: 20px;
-}
-.speaker-icon:hover{
-    color:#4036a2;
 }

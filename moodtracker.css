@@ -1,0 +1,167 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #b5d9ff, #f7d6ec); /* Matching intro hero section */
+    color: #1a2b44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+     
+      .container {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 30px;
+        border-radius: 25px;
+        text-align: center;
+        color: #000;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(10px);
+        width: 85%;
+        max-width: 700px;
+        margin-top: 30px;
+      }
+  
+      h1 {
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 24px;
+      }
+  
+      .mood-options {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+  
+      .mood-option {
+        flex: 1;
+        margin: 0 5px;
+        padding: 18px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        color: #000;
+      }
+  
+      .mood-option:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-3px);
+      }
+  
+      .mood-option.selected {
+        border: 2px solid #000;
+      }
+  
+      .mood-option span {
+        font-size: 26px;
+        display: block;
+      }
+  
+      .intensity-label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 10px;
+      }
+  
+      input[type="range"] {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+  
+      .log-button {
+        padding: 8px 22px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(to right, #41e3ac, #31b8e8);
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+      }
+  
+      .today-box {
+        margin-top: 20px;
+        padding: 20px;
+        width: 85%;
+        max-width: 700px;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+      }
+  
+      .today-box h2 {
+        margin-bottom: 10px;
+        font-size: 22px;
+        color: #4036a2;
+      }
+  
+      .today-log {
+        font-size: 16px;
+        color: #000;
+        white-space: pre-line;
+      }
+  
+      .clear-btn {
+        margin-bottom: 10px;
+        padding: 6px 15px;
+        background-color: #f56262;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+  
+      /* Modal */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(26, 43, 68, 0.4);
+        backdrop-filter: blur(4px);
+      }
+  
+      .modal-content {
+        background: white;
+        margin: 15% auto;
+        padding: 30px;
+        border-radius: 20px;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+  
+      .modal-content h2 {
+        margin-bottom: 10px;
+        color: #4036a2;
+      }
+  
+      .modal-content p {
+        color: #333;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+  
+      .close-btn {
+        float: right;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #aaa;
+      }
+  
+      .close-btn:hover {
+        color: #000;
+      }
+    
