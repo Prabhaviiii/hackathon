@@ -10,14 +10,20 @@
     "signInUser": "ユーザーとしてサインイン",
     "signInCaregiver": "介護者としてサインイン",
 
-     "title": "CareCue",
-    "language-label": "言語を選択",
-    "home": "ホーム",
-    "reminder": "リマインダー",
-    "Wellness": "健康",
-    "moodtracker": "気分",
-    "emergency": "緊急",
-    "greeting": "おはようございます",
-    "date": "月曜日、2025年6月23日",
-    "time": "午前10:44"
+    
+  "title": "ケアキュー",
+  "home": "ホーム",
+  "Reminder": "リマインダー",
+  "Wellness": "健康",
+  "moodtracker": "気分",
+  "emergency": "緊急",
+  "goodMorning": "おはようございます！",
+  "goodAfternoon": "こんにちは！",
+  "goodEvening": "こんばんは！",
+  "noRemindersToday": "今日のリマインダーはありません。",
+  "at": "に",
+  "locale": "ja-JP",
+  "timeFormat": "24h"
+
+
 }

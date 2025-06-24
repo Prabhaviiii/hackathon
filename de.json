@@ -10,15 +10,20 @@
     "SignInasUser": "Anmelden als Benutzer",
     "SignInasCaregiver": "Anmelden als Pflegekraft",
 
-     "title": "CareCue",
-    "language-label": "Sprache auswählen",
-    "home": "Startseite",
-    "reminder": "Erinnerung",
-    "Wellness": "Wellness",
-    "moodtracker": "Stimmung",
-    "emergency": "Notfall",
-    "greeting": "Guten Morgen",
-    "date": "Montag, 23. Juni 2025",
-    "time": "10:44 AM"
+  "title": "CareCue",
+  "home": "Startseite",
+  "Reminder": "Erinnerung",
+  "Wellness": "Wohlbefinden",
+  "moodtracker": "Stimmung",
+  "emergency": "Notfall",
+  "goodMorning": "Guten Morgen!",
+  "goodAfternoon": "Guten Tag!",
+  "goodEvening": "Guten Abend!",
+  "noRemindersToday": "Keine Erinnerungen für heute.",
+  "at": "um",
+  "locale": "de-DE",
+  "timeFormat": "24h"
 }
+
+
 
