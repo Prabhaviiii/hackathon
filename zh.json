@@ -1,0 +1,24 @@
+ {
+    "carecue": "关怀助手",
+    "signin": "登录",
+    "welcome": "欢迎使用CareCue",
+    "tagline": "您的每日数字健康助手",
+    "intro1": "CareCue是一款智能语音辅助的健康和提醒应用，适用于老年人、视障人士、患有痴呆症或多动症的人群，以及需要任务提醒的忙碌人士。",
+    "intro2": "它提供语音提醒、服药和补水提醒、每日日程安排，甚至提供护理人员界面以跟踪任务完成和紧急提醒。",
+    "intro3": "不同于可以被忽视的静音通知，CareCue的语音提醒帮助确保不会遗忘任何重要事项——无论是药丸、一杯水还是预约。",
+    "intro4": "简单、包容且富有影响力——CareCue为用户和家庭带来安心。",
+    "signInUser": "以用户身份登录",
+    "signInCaregiver": "以护理人员身份登录",
+
+    
+    "title": "CareCue",
+    "language-label": "选择语言",
+    "home": "主页",
+    "reminder": "提醒",
+    "Wellness": "健康",
+    "moodtracker": "心情",
+    "emergency": "紧急",
+    "greeting": "早上好",
+    "date": "2025年6月23日，星期一",
+    "time": "上午10:44"
+ }

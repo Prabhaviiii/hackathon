@@ -1,0 +1,24 @@
+{
+   "carecue": "CareCue",
+    "signin": "Anmelden",
+    "welcome": "Willkommen bei Carecue",
+    "tagline": "Ihr täglicher digitaler Wellness-Assistent",
+    "intro1": "CareCue ist eine intelligente, sprachgestützte App zur Erinnerungsunterstützung für alle – ältere Menschen, Sehbehinderte, Menschen mit Demenz oder ADHS und sogar vielbeschäftigte Menschen, die Erinnerungshilfen für ihre Aufgaben benötigen.",
+    "intro2": "Es bietet Sprachwarnungen, Medikamenten- und Flüssigkeitsreste, Tagespläne und sogar eine Schnittstelle für Pflegekräfte zur Verfolgung der Aufgabenerledigung und Notfallwarnungen.",
+    "intro3": "Im Gegensatz zu stummen Benachrichtigungen, die ignoriert werden können, helfen die Sprachbenachrichtigungen von CareCue sicherzustellen, dass keine wichtige Handlung vergessen wird – sei es eine Pille, ein Glas Wasser oder ein Termin.",
+    "intro4": "Einfach, inklusiv und wirkungsvoll – CareCue bringt sowohl den Nutzern als auch den Familien Ruhe und Sicherheit.",
+    "SignInasUser": "Anmelden als Benutzer",
+    "SignInasCaregiver": "Anmelden als Pflegekraft",
+
+     "title": "CareCue",
+    "language-label": "Sprache auswählen",
+    "home": "Startseite",
+    "reminder": "Erinnerung",
+    "Wellness": "Wellness",
+    "moodtracker": "Stimmung",
+    "emergency": "Notfall",
+    "greeting": "Guten Morgen",
+    "date": "Montag, 23. Juni 2025",
+    "time": "10:44 AM"
+}
+
