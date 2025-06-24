@@ -23,6 +23,11 @@ overflow-x: hidden;
     background-color: rgba(224,236,255,0.8);
     box-shadow: 0 2px 8px rgba(0,0,0,0,0,05);
 }
+.top-right-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .logos{
     width: 120px;
     height: auto;
@@ -33,7 +38,7 @@ overflow-x: hidden;
     color: #5a4fcf;
     transition: color 0.3s ease;
     z-index: 1100;
-    margin-right: 50px;
+    margin-left: 1100px;
 }
 .speaker-icon:hover{
     color: #4036a2;
@@ -46,7 +51,7 @@ overflow-x: hidden;
     background-color: rgba(255,255,255,0.25);
     padding: 20px;
     border-radius: 20px;
-    margin-top: 100px;
+    margin-top: 20px;
     flex-wrap: wrap;
     width: 90%;
     max-width: 1000px;
@@ -254,3 +259,35 @@ font-size: 20px;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+.languageSwitcher{
+    background-color: #5a4fcf;
+    color:white;
+    border-radius:8px;
+    text-decoration: none;
+}
+
+.languageSwitcher:hover{
+    background-color: #4036a2;
+
+}
+
+.language{
+    font-size: 20px;
+    position: relative;
+    margin:auto;
+    padding-left: 5px;
+
+    
+
+}
+@media (max-width:600px) {
+    .top-right-buttons{
+        flex-direction: row;
+        align-items: flex-end;
+        gap:8px;
+        position:static;
+        margin-top:10px;
+        background-color:  #f9f6f8;
+    }
+    
+} 

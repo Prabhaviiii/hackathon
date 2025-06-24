@@ -1,0 +1,23 @@
+{
+    "carecue": "soins",
+    "signin": "se connecter",
+    "welcome": "Bienvenue",
+    "tagline": "Votre assistant bien-être numérique quotidien",
+"intro1": "CareCue est une application intelligente d'assistance vocale et de rappel conçue pour tous : les personnes âgées, les malvoyants, les personnes atteintes de démence ou de TDAH, et même les personnes occupées qui ont besoin de rappels de tâches.",
+"intro2": "Il propose des alertes vocales, des rappels de médicaments et d'hydratation, des horaires quotidiens et même une interface pour les soignants pour suivre l'achèvement des tâches et les alertes d'urgence.",
+"intro 3": "Contrairement aux notifications silencieuses qui peuvent être ignorées, les rappels vocaux de CareCue aident à garantir qu'aucune action importante n'est oubliée, qu'il s'agisse d'une pilule, d'un verre d'eau ou d'un rendez-vous.",
+"intro4" : "Simple, inclusif et efficace, CareCue apporte la tranquillité d'esprit aux utilisateurs et aux familles.",
+"SignInasUser" : "connectez-vous en tant qu'utilisateur",
+"SignInasCaregiver": "Connectez-vous en tant que soignant",
+
+ "title": "CareCue",
+    "language-label": "Sélectionner la langue",
+    "home": "Accueil",
+    "reminder": "Rappel",
+    "Wellness": "Bien-être",
+    "moodtracker": "Humeur",
+    "emergency": "Urgence",
+    "greeting": "Bonjour",
+    "date": "Lundi 23 juin 2025",
+    "time": "10:44 AM"
+}
