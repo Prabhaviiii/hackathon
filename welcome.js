@@ -3,6 +3,7 @@ function updateGreetingDateTime() {
 
   let hours = now .getHours()
   const minutes = now.getMinutes().toString().padStart(2, '0');
+  
   const ampm = hours >= 12 ? 'PM' : 'AM';
   let displayHours = hours % 12;
   if (displayHours === 0) displayHours = 12;
