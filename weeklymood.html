@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Mood Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .week-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .day-card {
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .day-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      background: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .back-btn:hover {
+      background: #5b21b6;
+    }
+    .mood-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.mood-table th,
+.mood-table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a2b44;
+}
+
+.mood-table th {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.mood-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mood-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: 0.2s ease;
+}
+
+  </style>
+</head>
+<body>
+      <div class="top-bar">
+  <div class="logo-title">
+    <div class="logo-circle">
+      <div class="heart"></div>
+    </div>
+    <div class="title">CareCue</div>
+  </div>
+
+ </div>
+   <div class="navbar">
+
+   
+  <h1>🗓️ Weekly Mood Report</h1>
+
+<table class="mood-table">
+  <tr>
+    <th>Day</th>
+    <th>Mood</th>
+  </tr>
+  <tr><td>Sunday</td><td id="mood-sunday">-</td></tr>
+  <tr><td>Monday</td><td id="mood-monday">-</td></tr>
+  <tr><td>Tuesday</td><td id="mood-tuesday">-</td></tr>
+  <tr><td>Wednesday</td><td id="mood-wednesday">-</td></tr>
+  <tr><td>Thursday</td><td id="mood-thursday">-</td></tr>
+  <tr><td>Friday</td><td id="mood-friday">-</td></tr>
+  <tr><td>Saturday</td><td id="mood-saturday">-</td></tr>
+</table>
+
+  <button class="back-btn" onclick="window.history.back()">← Back to Dashboard</button>
+  <script>
+window.onload = function () {
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  days.forEach(day => {
+    const data = localStorage.getItem(`mood-${day}`);
+    const td = document.getElementById(`mood-${day.toLowerCase()}`);
+    if (data) {
+      const moodObj = JSON.parse(data);
+      td.textContent = `${moodObj.mood} (${moodObj.intensity}%)`;
+    } else {
+      td.textContent = "-";
+    }
+  });
+};
+</script>
+
+
+</body>
+</html>
