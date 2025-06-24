@@ -1,65 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carecue</title>
-    <link rel="stylesheet" href="welcome.css">
-    
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareCue</title>
+  <link rel="stylesheet" href="welcome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
 </head>
 <body>
+
 <div class="top-bar">
-    <div class="logo-title">
-        <div class="logo-circle"><div class="heart"></div></div>
-        <div class="title" data-i18n="title">CareCue</div>
-    </div>
-    <div class="top-right-wrapper">
-        <div class="speaker-icon" id="voice-toggle">
-            <i class="fas fa-volume-up"></i>
-        </div>
-        <div class="languageSwitcher">
-            <label for="languageSwitcher" class="language-label">
-               <i class="fas fa-globe"></i>
-            </label>
-            <select id="languageSwitcher">
-                <option value="en">English</option>
-                <option value="ne">नेपाली</option>
-                <option value="hi">हिन्दी</option>
-                <option value="ko">한국어</option>
-                <option value="ja">日本語</option>
-                <option value="es">Español</option>
-                <option value="zh">中文</option>
-                <option value="ru">Русский</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-            </select>
-           
-        </div>
-       
-    </div>
+  <div class="logo-title">
+    <div class="logo-circle"><div class="heart"></div></div>
+    <div class="title" data-i18n="title">CareCue</div>
+  </div>
+  <div class="speaker-icon" id="voice-toggle">
+    <i class="fas fa-volume-up"></i>
+  </div>
 </div>
 
 <div class="navbar">
-    <div class="nav-item" onclick="window.location.href='welcome.html'" data-i18n="home"> <i class="fas fa-home"></i>Home</div>
-    <div class="nav-item" onclick="window.location.href ='reminder.html'" data-i18n="reminder" ><i class="fas fa-bell"></i>Reminder</div>
-    <div class="nav-item" onclick="window.location.href= 'breathing.html'" data-i18n="wellness"><i class="fas fa-heartbeat"></i>wellness</div>
-    <div class="nav-item" onclick="window.location.href= 'moodtracker.html'" data-i18n="moodtracker"> <i class="fas fa-smile"></i>Mood</div>
-    <div class="nav-item" onclick="triggerEmergency()" data-i18n="emergency"> <i class="fa-solid fa-phone" style="color:#930760"></i>Emergency</div>
+  <div class="nav-item" onclick="window.location.href='welcome.html'" data-i18n="home"><i class="fas fa-home"></i>Home</div>
+  <div class="nav-item" onclick="window.location.href='reminder.html'" data-i18n="reminders"><i class="fas fa-bell"></i>Reminder</div>
+  <div class="nav-item" onclick="window.location.href='breathing.html'" data-i18n="wellness"><i class="fas fa-heartbeat"></i>Wellness</div>
+  <div class="nav-item" onclick="window.location.href='moodtracker.html'" data-i18n="mood"><i class="fas fa-smile"></i>Mood</div>
+ <div class="nav-item" onclick="triggerEmergency()" data-i18n="emergency"><i class="fa-solid fa-phone" style="color: #930760;"></i> Emergency
 </div>
+
+</div>
+
 <div class="greeting">
-    <h2 id="greeting-text" data-i18n-greeting>Good evening</h2>
-    <p id="date-text" data-i18n-date>Monday, June 23,2025</p>
-    <p class="time" id="time-display" data-i18n-time>10:44 AM</p>
+  <h2 id="greeting-text" >Good Morning</h2>
+  <p id="date-text">Wednesday, June 11, 2025</p>
+  <p class="time" id="time-display">08:30 AM</p>
 </div>
+
 <div class="cards" id="cards-container">
-    <!--Cards will be dynamically added here based on today's remainders-->
+  <!-- Cards will be dynamically added here based on today's reminders -->
 </div>
+
 <script src="welcome.js"></script>
 <script src="voice.js"></script>
-
 </body>
 </html>
+

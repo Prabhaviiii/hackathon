@@ -6,7 +6,6 @@ if ("Notification" in window && Notification.permission !== "granted") {
   });
 }
 
-
 function speak(text) {
   const ttsEnabled = localStorage.getItem('ttsEnabled') === 'true';
   if (!ttsEnabled || !('speechSynthesis' in window) || !text) return;
@@ -16,23 +15,14 @@ function speak(text) {
   window.speechSynthesis.speak(msg);
 }
 
-function isToday(dateStr) {
-  const today = new Date();
-  const date = new Date(dateStr);
-  return today.toDateString() === date.toDateString();
-}
-
-
 window.onload = function () {
   const schedules = JSON.parse(localStorage.getItem('schedules')) || [];
   schedules.forEach(schedule => {
     addReminderToDOM(schedule.title, schedule.time, schedule.date);
   });
 
-
   setInterval(checkForReminders, 1000);
 };
-
 
 function addReminder() {
   const text = document.getElementById("reminderText").value.trim();
@@ -43,6 +33,7 @@ function addReminder() {
     alert("Please enter reminder, time, and date!");
     return;
   }
+
   addReminderToDOM(text, time, date);
 
   let schedules = JSON.parse(localStorage.getItem('schedules')) || [];
@@ -71,6 +62,7 @@ function addReminderToDOM(text, time, date) {
   reminder.querySelector('.done-btn').addEventListener('click', () => {
     reminderList.removeChild(reminder);
     removeFromLocalStorage(text, time, date);
+    addToCompletedReminders(text, time, date);
     speak(`Reminder completed: ${text}`);
   });
 
@@ -81,6 +73,12 @@ function removeFromLocalStorage(title, time, date) {
   let schedules = JSON.parse(localStorage.getItem('schedules')) || [];
   schedules = schedules.filter(s => !(s.title === title && s.time === time && s.date === date));
   localStorage.setItem('schedules', JSON.stringify(schedules));
+}
+
+function addToCompletedReminders(title, time, date) {
+  let completed = JSON.parse(localStorage.getItem('completedReminders')) || [];
+  completed.push({ title, time, date });
+  localStorage.setItem('completedReminders', JSON.stringify(completed));
 }
 
 function checkForReminders() {
@@ -96,12 +94,10 @@ function checkForReminders() {
       reminder.time === currentTime &&
       !reminder.notified
     ) {
-    
       if (Notification.permission === "granted") {
         new Notification("⏰ Reminder", { body: reminder.title });
       }
 
-    
       speak(`Reminder: ${reminder.title} at ${reminder.time}`);
 
       reminder.notified = true;
