@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    font-family: 'segoe UI', sans-serif;
+    background: linear-gradient(to bottom ,#b5d9ff, #f7d6ec);
+    color: #1a2b44;
+    display:flex;
+    flex-direction: column;
+    align-items:100vh;
+    overflow-x:hidden;
+}
+
+
+.breathing-wrapper{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+    min-height: calc(100vh -400px);
+    margin:0 auto;
+    text-align: center;
+}
+
+ .circle{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #b5d9ff, #f7d6ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    transition: transform 4s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+} 
+
+.circle i{
+    font-size: 60px;
+    color: white;
+}
+
+#instruction{
+    font-size:24px;
+    font-weight:40px;
+    margin: 15px 0 5px 0;
+    color: #1a2b44;
+
+}
+.subtext{
+    font-size: 16px;
+    color: #555;
+    margin-bottom:5px;
+}
+
+#timer{
+    margin-bottom: 15px;
+    font-weight: 600;
+    color:#4036a2;
+    font-size: 18px;
+
+}
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius: 8px;
+     border-color: #5a4fcf;
+     color: white;
+     font-size: 16px;
+     font-weight: bold;
+     margin: 10px 10px 0 10px;
+     cursor: pointer;
+     transition: background 0.3s;
+
+}
+
+#startBtn{
+    background-color: #4036a2;
+    margin-top: -10px;
+}
+
+button:hover{
+     background-color: #4036a2;
+    
+
+}
+
+#stopBtn{
+    background-color: #4036a2;
+    margin-top: -10px;
+}
+
+button:hover{
+     background-color: #4036a2;
+    
+
+}
