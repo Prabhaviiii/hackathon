@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reminders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="reminder.css">
+  <link rel="stylesheet" href="welcome.css">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="logo-title">
+    <div class="logo-circle"><div class="heart"></div></div>
+    <div class="title">CareCue</div>
+  </div>
+  <div class="speaker-icon" id="voice-toggle">
+    <i class="fas fa-volume-up"></i>
+  </div>
+</div>
+
+
+  <div class="navbar">
+    <div class="nav-item" onclick="window.location.href='welcome.html'">
+      <i class="fas fa-home"></i> Home
+    </div>
+    <div class="nav-item active" onclick="window.location.href='reminder.html'">
+      <i class="fas fa-bell"></i> Reminder
+    </div>
+    <div class="nav-item" onclick="window.location.href='breathing.html'">
+      <i class="fas fa-heartbeat"></i> Wellness
+    </div>
+    <div class="nav-item" onclick="window.location.href='moodtracker.html'">
+      <i class="fas fa-smile"></i> Mood
+    </div>
+    <div class="nav-item" onclick="triggerEmergency()">
+  <i class="fa-solid fa-phone" style="color: #930760;"></i> Emergency
+</div>
+
+  </div>
+
+  <div class="container">
+    <h1>Your Reminders</h1>
+
+  
+    <div class="input-area">
+      <input type="text" id="reminderText" placeholder="e.g. Doctor's appointment" />
+      <input type="time" id="reminderTime" />
+      <input type="date" id="reminderDate" />
+      <button onclick="addReminder()">Add</button>
+    </div>
+
+    
+    <div id="reminderList" class="reminder-list"></div>
+  </div>
+  <script src="voice.js"></script>
+  <script src="reminder.js"></script>
+
+  
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDDsTfFdss-jes9NQx8GdFmrNkIfoMvqvk",
+    authDomain: "carecue-eaeab.firebaseapp.com",
+    projectId: "carecue-eaeab",
+    storageBucket: "carecue-eaeab.firebasestorage.app",
+    messagingSenderId: "1005001160049",
+    appId: "1:1005001160049:web:a7374dfe3a13fcc60332d0",
+    measurementId: "G-30F2XNYXNC"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</body>
+</html>
+
+
