@@ -11,14 +11,20 @@
     "signInCaregiver": "以护理人员身份登录",
 
     
-    "title": "CareCue",
-    "language-label": "选择语言",
-    "home": "主页",
-    "reminder": "提醒",
-    "Wellness": "健康",
-    "moodtracker": "心情",
-    "emergency": "紧急",
-    "greeting": "早上好",
-    "date": "2025年6月23日，星期一",
-    "time": "上午10:44"
+    
+  "title": "关爱提示",
+  "home": "首页",
+  "Reminder": "提醒",
+  "Wellness": "健康",
+  "moodtracker": "心情",
+  "emergency": "紧急",
+  "Good Morning": "早上好！",
+  "Good Afternoon": "下午好！",
+  "Good Evening": "晚上好！",
+  "noRemindersToday": "今天没有提醒。",
+  "at": "在",
+  "locale": "zh-CN",
+  "timeFormat": "24h"
+
+
  }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="welcome.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 <body>
 <div class="top-bar">
@@ -35,15 +36,15 @@
 </div> 
 <div class="navbar">
     <div class="nav-item" onclick="window.location.href='welcome.html'" data-i18n="home"> <i class="fas fa-home"></i>Home</div>
-    <div class="nav-item" onclick="window.location.href ='remainder.html'" data-i18n="remainder" ><i class="fas fa-bell"></i>Remainder</div>
-    <div class="nav-item" onclick="window.location.href= 'wellness.html'" data-i18n="wellness"><i class="fas fa-heartbeat"></i>wellness</div>
+    <div class="nav-item" onclick="window.location.href ='Reminder.html'" data-i18n="Reminder" ><i class="fas fa-bell"></i>Reminder</div>
+    <div class="nav-item" onclick="window.location.href= 'Wellness.html'" data-i18n="Wellness"><i class="fas fa-heartbeat"></i>Wellness</div>
     <div class="nav-item" onclick="window.location.href= 'moodtracker.html'" data-i18n="moodtracker"> <i class="fas fa-smile"></i>Mood</div>
     <div class="nav-item" onclick="triggerEmergency()" data-i18n="emergency"> <i class="fa-solid fa-phone" style="color:#930760"></i>Emergency</div>
 </div>
 <div class="greeting">
-    <h2 id="greeting-text">Good evening</h2>
-    <p id="data-text">Monday,June 23,2025</p>
-    <p class="time" id="time-display">10:44 AM</p>
+    <h2 id="greeting-text" data-i18n-greeting>Good evening</h2>
+    <p id="date-text" data-i18n-date>Monday, June 23,2025</p>
+    <p class="time" id="time-display" data-i18n-time>10:44 AM</p>
 </div>
 <div class="cards" id="cards-container">
     <!--Cards will be dynamically added here based on today's remainders-->

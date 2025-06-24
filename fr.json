@@ -10,14 +10,19 @@
 "SignInasUser" : "connectez-vous en tant qu'utilisateur",
 "SignInasCaregiver": "Connectez-vous en tant que soignant",
 
- "title": "CareCue",
-    "language-label": "Sélectionner la langue",
-    "home": "Accueil",
-    "reminder": "Rappel",
-    "Wellness": "Bien-être",
-    "moodtracker": "Humeur",
-    "emergency": "Urgence",
-    "greeting": "Bonjour",
-    "date": "Lundi 23 juin 2025",
-    "time": "10:44 AM"
+  "title": "CareCue",
+  "home": "Accueil",
+  "Reminder": "Rappel",
+  "Wellness": "Bien-être",
+  "moodtracker": "Humeur",
+  "emergency": "Urgence",
+  "goodMorning": "Bonjour !",
+  "goodAfternoon": "Bon après-midi !",
+  "goodEvening": "Bonsoir !",
+  "noRemindersToday": "Aucun rappel pour aujourd'hui.",
+  "at": "à",
+  "locale": "fr-FR",
+  "timeFormat": "24h"
+
+
 }
