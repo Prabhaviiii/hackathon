@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom, #b5d9ff, #f7d6ec); /* Matching intro hero section */
@@ -55,7 +55,7 @@ body {
 
     .container {
       max-width: 700px;
-      margin: 0;
+      margin: auto;
       background: rgba(255,255,255,0.25);
       padding: 30px;
       border-radius: 20px;
@@ -153,8 +153,3 @@ body {
   background-color: rgba(224, 236, 255, 0.8); /* matches intro navbar */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
-    
-    
-    
-

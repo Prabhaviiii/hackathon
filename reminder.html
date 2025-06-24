@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +47,7 @@
   <div class="container">
     <h1>Your Reminders</h1>
 
-  
+    <!-- Input Area -->
     <div class="input-area">
       <input type="text" id="reminderText" placeholder="e.g. Doctor's appointment" />
       <input type="time" id="reminderTime" />
@@ -53,7 +55,7 @@
       <button onclick="addReminder()">Add</button>
     </div>
 
-    
+    <!-- Reminder List -->
     <div id="reminderList" class="reminder-list"></div>
   </div>
   <script src="voice.js"></script>
@@ -74,11 +76,13 @@
     measurementId: "G-30F2XNYXNC"
   };
 
+  // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
 
 </body>
 </html>
+
 
 
