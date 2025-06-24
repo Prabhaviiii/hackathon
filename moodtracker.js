@@ -1,6 +1,4 @@
-  
-  
-  const moodOptions = document.querySelectorAll('.mood-option');
+const moodOptions = document.querySelectorAll('.mood-option');
   let selectedMood = null;
   
   // Mood selection
@@ -67,6 +65,16 @@
     let logs = JSON.parse(localStorage.getItem('moodLogs')) || [];
     logs.unshift(entry);
     localStorage.setItem('moodLogs', JSON.stringify(logs));
+   
+
+    
+const weekday = now.toLocaleDateString(undefined, { weekday: 'long' });
+localStorage.setItem(`mood-${weekday}`, JSON.stringify({
+  mood: selectedMood,
+  intensity: intensity,
+  time: timeStr
+}));
+
   
     renderMoodLogs();
   
