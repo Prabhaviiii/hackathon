@@ -46,7 +46,7 @@ function startBreathing() {
     
     if (sessionTime <= 0) {
       stopBreathing();
-      instruction.textContent = "Session Complete!";
+      instruction.textContent =  "Session Complete!";
       speak("Session complete");
     }
   }, 1000);
