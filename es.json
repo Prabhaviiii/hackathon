@@ -1,0 +1,25 @@
+{
+
+    "carecue": "cuidado",
+    "signin": "Iniciar sesión",
+     "welcome": "bienvenido a carecue",
+     "tagline": "Tu asistente digital de bienestar diario",
+     "intro1": "CareCue es una aplicación inteligente, asistida por voz y con recordatorios, diseñada para todos: personas mayores, personas con discapacidad visual, personas con demencia o TDAH e incluso personas ocupadas que necesitan recordatorios de tareas.",
+     "intro2": "It offers voice alerts,medication and hydration remainders,daily schedules, and even caregiver interface to track task completion and emergency alerts.", 
+     "intro3" : "A diferencia de las notificaciones silenciosas que se pueden ignorar, los recordatorios de voz de CareCue ayudan a garantizar que no se olvide ninguna acción importante, ya sea una pastilla, un vaso de agua o una cita.",
+    "intro4" : "Sencillo, inclusivo e impactante: CareCue brinda tranquilidad tanto a los usuarios como a las familias.",
+    "SignInasUser": "Iniciar sesiónusuario",
+    "SignInasCaregiver": "Iniciar sesión como cuidadora",
+
+
+"title": "CareCue",
+    "language-label": "Seleccionar idioma",
+    "home": "Inicio",
+    "reminder": "Recordatorio",
+    "Wellness": "Bienestar",
+    "moodtracker": "Estado de ánimo",
+    "emergency": "Emergencia",
+    "greeting": "Buenos días",
+    "date": "Lunes, 23 de junio de 2025",
+    "time": "10:44 AM"
+  }

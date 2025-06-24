@@ -1,0 +1,24 @@
+{
+    "carecue": "CareCue",
+    "signin": "Sign In",
+    "welcome": "welcome to Carecue",
+    "tagline": "Your daily digital wellness assistant",
+    "intro1": "CareCue is a smart,voice-assisted and remainder app built for everypne- the elderly, the visually impaired,individials with dementia or ADHD, and even busy people who need task remainders.",
+    "intro2": "It offers voice alerts,medication and hydration remainders,daily schedules, and even caregiver interface to track task completion and emergency alerts.",
+    "intro3": "Unlike silent notifications that can be ignored, CareCue's voice remainders help ensure no important action is forgotten-whether it's a pill, a glass of water,or an appointment.",
+    "intro4": " Simple,inclusive,and impactful-CareCue brings peace of mind for users and families alike.",
+    "SignInasUser": "Sign in as User",
+    "SignInasCaregiver": "Sign in as Caregiver",
+    
+    "title": "CareCue",
+    "language-label": "Select Language",
+    "home": "Home",
+    "reminder": "Reminder",
+    "Wellness": "Wellness",
+    "moodtracker": "Mood",
+    "emergency": "Emergency",
+    "greeting": "Good Morning",
+    "date": "Monday, June 23, 2025",
+    "time": "10:44 AM"
+  
+}
