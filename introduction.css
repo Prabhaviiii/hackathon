@@ -167,6 +167,7 @@ body{
     display: flex;
     gap:10px;
     z-index: 1001;
+    margin-top: 2px;
 }
 
 
@@ -187,6 +188,7 @@ body{
     position: relative;
     margin:auto;
     padding-left: 2px;
+   
 
     
 

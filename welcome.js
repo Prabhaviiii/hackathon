@@ -1,4 +1,4 @@
-function updateGreetingDateTime() {
+ function updateGreetingDateTime() {
   const now = new Date();
 
   let hours = now.getHours();
@@ -34,7 +34,7 @@ function updateGreetingDateTime() {
 navigator.permissions?.query({ name: 'microphone' }).then(result => {
   if (result.state === 'denied') {
     alert('Microphone access is blocked. Please allow it from browser settings.');
-    }
+     }
 });
 
 function isToday(dateStr) {

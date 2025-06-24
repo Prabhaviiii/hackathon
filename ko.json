@@ -11,14 +11,20 @@
     "signInCaregiver": "돌보미로 로그인",
 
      
-    "title": "CareCue",
-    "language-label": "언어 선택",
-    "home": "홈",
-    "reminder": "알림",
-    "Wellness": "웰니스",
-    "moodtracker": "기분",
-    "emergency": "비상",
-    "greeting": "좋은 아침",
-    "date": "월요일, 2025년 6월 23일",
-    "time": "10:44 오전"
- }
+    
+  "title": "케어큐",
+  "home": "홈",
+  "Reminder": "알림",
+  "wellness": "건강",
+  "moodtracker": "기분",
+  "emergency": "긴급",
+  "goodMorning": "좋은 아침!",
+  "goodAfternoon": "좋은 오후!",
+  "goodEvening": "좋은 저녁!",
+  "noRemindersToday": "오늘은 알림이 없습니다.",
+  "at": "에",
+  "locale": "ko-KR",
+  "timeFormat": "24h"
+}
+
+ 

@@ -10,14 +10,19 @@
     "signInUser": "यूज़र के रूप में साइन इन करें",
     "signInCaregiver": "केयरगिवर के रूप में साइन इन करें",
 
-     "title": "CareCue",
-    "language-label": "भाषा चुनें",
-    "home": "होम",
-    "reminder": "अनुस्मारक",
-    "Wellness": "कल्याण",
-    "moodtracker": "मूड",
-    "emergency": "आपातकालीन",
-    "greeting": "शुभ प्रभात",
-    "date": "सोमवार, 23 जून 2025",
-    "time": "10:44 AM"
+     
+  "title": "केयरक्यू",
+  "home": "होम",
+  "Reminder": "अनुस्मारक",
+  "Wellness": "स्वास्थ्य",
+  "moodtracker": "मूड",
+  "emergency": "आपातकाल",
+  "goodMorning": "सुप्रभात!",
+  "goodAfternoon": "नमस्कार!",
+  "goodEvening": "शुभ संध्या!",
+  "noRemindersToday": "आज के लिए कोई अनुस्मारक नहीं है।",
+  "at": "पर",
+  "locale": "hi-IN",
+  "timeFormat": "12h"
 }
+

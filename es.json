@@ -12,14 +12,20 @@
     "SignInasCaregiver": "Iniciar sesión como cuidadora",
 
 
-"title": "CareCue",
-    "language-label": "Seleccionar idioma",
-    "home": "Inicio",
-    "reminder": "Recordatorio",
-    "Wellness": "Bienestar",
-    "moodtracker": "Estado de ánimo",
-    "emergency": "Emergencia",
-    "greeting": "Buenos días",
-    "date": "Lunes, 23 de junio de 2025",
-    "time": "10:44 AM"
-  }
+
+  "title": "CareCue",
+  "home": "Inicio",
+  "Reminder": "Recordatorio",
+  "Wellness": "Bienestar",
+  "moodtracker": "Estado de ánimo",
+  "emergency": "Emergencia",
+  "goodMorning": "¡Buenos días!",
+  "goodAfternoon": "¡Buenas tardes!",
+  "goodEvening": "¡Buenas noches!",
+  "noRemindersToday": "No hay recordatorios para hoy.",
+  "at": "a las",
+  "locale": "es-ES",
+  "timeFormat": "12h"
+}
+
+  

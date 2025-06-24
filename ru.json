@@ -10,14 +10,20 @@
     "signInUser": "Войти как пользователь",
     "signInCaregiver": "Войти как опекун",
 
-    "title": "CareCue",
-    "language-label": "Выберите язык",
-    "home": "Главная",
-    "reminder": "Напоминание",
-    "Wellness": "Здоровье",
-    "moodtracker": "Настроение",
-    "emergency": "Чрезвычайная ситуация",
-    "greeting": "Доброе утро",
-    "date": "Понедельник, 23 июня 2025 года",
-    "time": "10:44 AM"
- }
+   
+  "title": "КеарКью",
+  "home": "Главная",
+  "Reminder": "Напоминание",
+  "Wellness": "Самочувствие",
+  "moodtracker": "Настроение",
+  "emergency": "Срочно",
+  "goodMorning": "Доброе утро!",
+  "goodAfternoon": "Добрый день!",
+  "goodEvening": "Добрый вечер!",
+  "noRemindersToday": "На сегодня нет напоминаний.",
+  "at": "в",
+  "locale": "ru-RU",
+  "timeFormat": "24h"
+}
+
+ 
