@@ -9,7 +9,22 @@ align-items: center;
 min-height: 100vh;
 overflow-x: hidden;
 }
+.navbar{
+    background-color:  #e0ecff;
+    padding: 14px 24px;
+    display: flex;
 
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    z-index:1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+}
 .top-bar{
     display: flex;
     justify-content: space-between;
@@ -38,7 +53,7 @@ overflow-x: hidden;
     color: #5a4fcf;
     transition: color 0.3s ease;
     z-index: 1100;
-    margin-left: 1100px;
+    margin-right: 50px;
 }
 .speaker-icon:hover{
     color: #4036a2;
@@ -259,35 +274,36 @@ font-size: 20px;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-.languageSwitcher{
-    background-color: #5a4fcf;
-    color:white;
-    border-radius:8px;
-    text-decoration: none;
+.top-right-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
 }
 
-.languageSwitcher:hover{
-    background-color: #4036a2;
-
-}
-
-.language{
-    font-size: 20px;
-    position: relative;
-    margin:auto;
-    padding-left: 5px;
-
+.speaker-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #5a4fcf;
+    transition: color 0.3s ease;
+    z-index: 1100;
+    margin-right: 0; 
+    margin-left: 1000px;
     
-
 }
-@media (max-width:600px) {
-    .top-right-buttons{
-        flex-direction: row;
-        align-items: flex-end;
-        gap:8px;
-        position:static;
-        margin-top:10px;
-        background-color:  #f9f6f8;
-    }
-    
-} 
+.languageSwitcher select {
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #5a4fcf;
+    cursor: pointer;
+}
+.languageSwitcher-label{
+    background-color: #5a4fcf ;
+}
+
+.fas_fa-globe{
+    margin-left: 20px;
+}
+.speaker-icon:hover{
+    color:#4036a2;
+}
